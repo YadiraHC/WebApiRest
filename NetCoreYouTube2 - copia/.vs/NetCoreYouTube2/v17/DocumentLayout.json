@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D788CDC1-07FE-4872-864A-508E8D966DD0}|NetCoreYouTube2\\NetCoreYouTube2.csproj|c:\\users\\yadir\\downloads\\webapirest\\netcoreyoutube2\\netcoreyoutube2\\controllers\\clientecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D788CDC1-07FE-4872-864A-508E8D966DD0}|NetCoreYouTube2\\NetCoreYouTube2.csproj|solutionrelative:netcoreyoutube2\\controllers\\clientecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D788CDC1-07FE-4872-864A-508E8D966DD0}|NetCoreYouTube2\\NetCoreYouTube2.csproj|c:\\users\\yadir\\downloads\\webapirest\\netcoreyoutube2\\netcoreyoutube2\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D788CDC1-07FE-4872-864A-508E8D966DD0}|NetCoreYouTube2\\NetCoreYouTube2.csproj|solutionrelative:netcoreyoutube2\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D788CDC1-07FE-4872-864A-508E8D966DD0}|NetCoreYouTube2\\NetCoreYouTube2.csproj|c:\\users\\yadir\\downloads\\webapirest\\netcoreyoutube2\\netcoreyoutube2\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D788CDC1-07FE-4872-864A-508E8D966DD0}|NetCoreYouTube2\\NetCoreYouTube2.csproj|solutionrelative:netcoreyoutube2\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 209,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\NetCoreYouTube2\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "NetCoreYouTube2\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\NetCoreYouTube2\\Models\\Cliente.cs",
+              "RelativeToolTip": "NetCoreYouTube2\\Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T20:58:05.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteContoller.cs",
+              "DocumentMoniker": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\NetCoreYouTube2\\Controllers\\ClienteContoller.cs",
+              "RelativeDocumentMoniker": "NetCoreYouTube2\\Controllers\\ClienteContoller.cs",
+              "ToolTip": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\NetCoreYouTube2\\Controllers\\ClienteContoller.cs",
+              "RelativeToolTip": "NetCoreYouTube2\\Controllers\\ClienteContoller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T20:43:23.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\NetCoreYouTube2\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "NetCoreYouTube2\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\yadir\\Downloads\\WebApiRest\\NetCoreYouTube2\\NetCoreYouTube2\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "NetCoreYouTube2\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T20:40:21.298Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

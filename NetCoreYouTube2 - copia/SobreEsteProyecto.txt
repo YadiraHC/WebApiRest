@@ -1,0 +1,104 @@
+Crear el proyecto
+
+Cerrar la pestaña de presntacion
+
+Revisa el conrtrolador emjemplo y complila.
+
+Puedes ejecutar, otener la lista y abrir la ruta desde el navegador.
+
+Crear tu clase 'ClienteController' en C_'Controllers'. Hereda el 'ControllerBase' desde el controladorde de ejemplo con ':ControllerBase' y contreon punto en caso de eror.
+
+Crea un método(1) y ponle la ruta principal(2) y cambias el nombre a cliente.
+
+1°Regre el nombre y edad de Jesús.
+
+Luego creas la carpeta de 'Models' y creas la clase 'Cliente.cs'. Creas como 'string'(por mientras) a un cliente (get, set) con su nombre, edad y correo.< y id. Borras a 1° y pones la lista temporal con los 4 campos y Cont+. en caso de error'using NetCoreYouTube2.Models;'. Copias pegas a todo el cliente soolo cmabia id.
+
+Retornas a clientes y ejecutas y aparece 'Get/cliente/listar' y sale el id 1 y2.
+
+Ahora, en postman copias la url 'https://localhost:7048/' y '/cliente/listar' y retorna los mismo datos de id 1 y2.
+
+Paras la ejecución y agregas la ruta GUARDASR
+(3)
+---
+[HttpPost]
+[Route("guardar")]//direccion/cliente/guardarr
+public dynamic guardarCliente()
+{
+
+}
+---
+
+Ejecutas y copias en postman 'https://localhost:7048/cliente/listar' y el RequestBODY e swaggwer pero no mandas el id. 
+
+Da error por ser get. Pausas y copias todo el medoto de listarCLte para hacer el 'listarxid' y recibimos el paramero que antes era (_id). Ejecutas y ya en postman copias https://localhost:7048/cliente/listarxid?=2' pero va a dar error. 
+
+Asi que cambias (_id) a este código:[HttpGet]
+[Route("listarxid")] //direccion/cliente/listar ()
+public dynamic listarClientexid(int codigo)//recibismos el parametro que antes era _id
+{
+    return new Cliente
+    {
+        id = codigo.ToString(),
+        correo = "Bernando@gmail.com",
+        edad = "19",
+        nombre = "Bernando"
+    };
+}----------
+Ejecutas y en postman pones 'Key:codigo' y 'value:2'
+ Y listo.
+
+Ahora falta como receocional los header.
+En postan duplicas el de listarxid y pones el header:key: Authorization y value: marco123.  (4) Copias y pegas el método (guardarCliente). Debe de quedar de la siguiente manera: [HttpPost]//(4)
+[Route("eliminar")]//direccion/cliente/eliminar
+public dynamic eliminarCliente(Cliente cliente)
+{
+    cliente.id = "3";
+
+    return new
+    {
+        success = true,
+        message = "Cliente eliminado",
+        result = cliente
+    };
+}------------- AHora agregas el token en el código y debe quedar asi: 
+-----
+[HttpPost]//(4)
+[Route("eliminar")]//direccion/cliente/eliminar
+public dynamic eliminarCliente(Cliente cliente)
+{
+    //Requeste para el header
+    string token = Request.Headers.Where(x => x.Key == "Authorizarion").FirstOrDefault().Value;
+
+    if(token != "marco123")
+    {
+        return new
+        {
+            success = false,
+            message = "token incorrecto",
+            result = cliente
+        }; 
+    }
+
+    return new
+    {
+        success = true,
+        message = "Cliente eliminado",
+        result = cliente
+    };
+}
+-------
+y ejecutas.
+------
+Se va a pobar en psotman. Duplicas 'guardad'(porque el otro parece que no se va a usar' y poner'https://localhost:7048/cliente/eliminar' ya en el body dejas el que esta pero con id0 y solo poner las mismas del header y debe salir 'token incorrecto' Es porque en el código debajo de 'token incorrecto debe regresar 'result = ""'. 
+---
+y ejecutas
+---
+En postman y es diferente de marco123 sale Tincorrecto, sino, cliente eliminardo
+---
+Y eso es todo.
+---
+en el siguiente video que checa lo que es la autorización.
+
+
+Este video solo llego a 1/3

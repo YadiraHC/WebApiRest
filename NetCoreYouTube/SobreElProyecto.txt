@@ -1,0 +1,7 @@
+En este proyecto segui el tutorial de 26min de Sodtware Lion Dev de 'Crear una Web Api Rest en C#'.
+Tnebien el video de 1hora.
+
+El archivo de postman para probar este archio tiene el mismo nombre.
+
+No borres este proyecto, fue practica 1.
+Solo quecha que en postman no borra pero en en swaggwe sip.
